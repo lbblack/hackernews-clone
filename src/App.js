@@ -1,23 +1,21 @@
 import logo from './logo.svg';
-import './App.css';
+import Navbar from './Navbar.js';
+import Posts from './Posts.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="App">
+      <Navbar />
+      <Posts page={0} />
+    {/* todo: 
+        
+        keep track of a footer here
+        when the user clicks on the next page
+        keep track of the state here,
+        pass the next index into posts
+        where posts can add an offset
+        to the sliced entries
+      */}
     </div>
   );
 }

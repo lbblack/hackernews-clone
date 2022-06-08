@@ -9,22 +9,149 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/y18.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/purecss@1.0.0/build/pure.css">
+    <title>Hackernews Clone</title>
+    <style type="text/css">
+      .navbar a {
+        padding-left: 0.15em;
+        padding-right: 0.15em;
+        color: black;
+        text-decoration: none;
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 10pt;
+        color: #222222;
+        line-height: 12px;
+      }
+
+      .navbar .link-items {
+        padding-top: 3px;
+      }
+
+      .navbar .navbar-home {
+        /*padding-left: 10em !important;*/
+        padding-right: 0.7em;
+        padding-left: 1.1em;
+        font-weight: bold;
+        font-size: 13px;
+      }
+
+      .navbar {
+        padding: 1px;
+        padding-bottom: 2px;
+        margin-top: 0.5em;
+        background-color: #ff6600;
+      }
+
+      .App {
+        margin-left: 90px;
+        margin-right: 110px;
+      }
+
+      .navbar img {
+        border: 1px white solid;
+        width: 18px;
+        height: 18px;
+        margin-left: 1px;
+        margin-bottom: -3px;
+        margin-right: -10px;
+        margin-top: 1px;
+        
+      }
+
+      .posts {
+        padding-top: 0.5em;
+        padding-left: 0.25em;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 10pt;
+        font-weight: normal;
+        color: #828282;
+        background-color: #f3f5eb;
+
+        margin-bottom: 3em;
+        padding-bottom: 1em;
+      }
+
+      hr {
+        border: #ff6600 1px solid;
+        width: 100%;
+        margin-left: -2px;
+        margin-top: 9px;
+      }
+
+      table {
+        border-spacing: 0px;
+      }
+
+      td {
+        /*padding: 1px;*/
+      }
+
+      td.number {
+        font-weight: bold;
+        margin-left: 4px !important;
+        width: 1.5em;
+        padding-right: 3px;
+      }
+
+      td.number {
+        text-align: end;
+      }
+
+      td.upvote {
+        font-size: 10px;
+        padding: none;
+        margin: 0 auto;
+      }
+
+      td.upvote:hover {
+        color: #000;
+        cursor: pointer;
+      }
+
+      .title {
+        color: #000;
+        padding-right: 4px;
+        text-decoration: none;
+      }
+
+      .shortened-url {
+        /*width: 4em;*/
+        color: #828282;
+        font-size: 11px;
+        text-align: left;
+      }
+
+      tr#card-details {
+        font-size: 9px;
+        width: 5em;
+      }
+
+      td.score {
+        width: 8em;
+      }
+
+      td#spacer {
+        padding: 3px;
+      }
+
+      td#double-spacer {
+        padding: 6px;
+      }
+
+      a#next-page {
+        margin: 2.75em;
+        text-decoration: none;
+        color: #828282;
+      }
+
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
